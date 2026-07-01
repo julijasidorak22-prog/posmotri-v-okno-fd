@@ -45,6 +45,8 @@ ol {
   width: 1140px;
   height: 534px;
   margin: 133px 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .result {
@@ -324,10 +326,6 @@ ol {
   width: 390px;
   min-height: 34px;
   align-self: center;
-}
-
-.preloader {
-  position: absolute;
 }
 
 /* Кастомный скроллбар */
