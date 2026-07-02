@@ -210,11 +210,11 @@ ol {
   display: flex;
   flex-direction: row;
   gap: 15px;
+  width: 212px;
 }
 
 .search-form__fieldset {
   border: none;
-  min-width: 225px;
 }
 
 .search-form__label {
@@ -223,6 +223,7 @@ ol {
   align-items: center;
   gap: 5px;
   cursor: pointer;
+  width: 225px;
 }
 
 .search-form__label:has(:focus-visible) {
