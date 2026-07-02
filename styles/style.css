@@ -45,13 +45,11 @@ ol {
   flex-direction: row;
   gap: 30px;
   width: 1140px;
-  height: 534px;
   align-items: flex-end;
 }
 
 .result {
   width: 711px;
-  height: 456px;
   align-self: flex-end;
 }
 
@@ -70,7 +68,6 @@ ol {
 
 .search-form {
   width: 711px;
-  height: 54px;
   display: flex;
   flex-direction: row;
   gap: 40px;
@@ -98,7 +95,6 @@ ol {
   gap: 30px;
   position: relative;
   overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .content__list {
@@ -123,7 +119,7 @@ ol {
 .content__video-card-description-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: auto auto;
   align-items: start;
   flex-grow: 2;
   gap: 6px;
@@ -135,7 +131,6 @@ ol {
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
-  font-style: bold;
   line-height: 94%;
   letter-spacing: 0;
 }
@@ -285,6 +280,7 @@ ol {
 }
 
 .button {
+  min-height: 34px;
   border: solid white 1px;
   font-family: inherit;
   font-weight: 700;
@@ -294,16 +290,17 @@ ol {
   background-color: transparent;
   color: white;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
   align-self: flex-end;
 }
 
 .button:focus-visible {
   outline: solid white 1px;
+  outline-offset: 2px;
   margin: 1px;
 }
 
@@ -323,7 +320,6 @@ ol {
 
 .more-button {
   width: 100%;
-  min-height: 34px;
   align-self: center;
 }
 
